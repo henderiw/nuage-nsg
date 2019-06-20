@@ -1,0 +1,16 @@
+{   "Name": "vspkgoRGTest1",
+    "NSGTemplateName": "VSPK_NSG_empty_public",
+    "NSGTemplateID": "0",
+    "NetworkPorts": [
+      {"Name":"port1", "vlanId":0,"Role": "PRIMARY", "addressFamily": "IPV4", "mode": "Dynamic",  "underlayName" : "", "underlayId":"0", "vscName": "VSPK_VSC_Public_1", "vscId":"uuid"}
+    ],
+    "ShuntPorts": [
+        {"Name":"port2", "vlanId":1,"Role": "PRIMARY", "addressFamily": "IPV4", "mode": "Static", "address":"192.1.1.1", "netmask": "255.255.255.0", "dns":"8.8.8.8", "gateway":"192.1.1.2"}
+      ],
+    "AccessPorts":[
+        {"Name":"port3", "VlanID": 1},
+        {"Name":"port4", "VlanID": 1},
+        {"Name":"port5", "VlanID": 1},
+        {"Name":"port6", "VlanID": 1}
+    ]
+}
